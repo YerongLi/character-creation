@@ -1,6 +1,7 @@
-completion_prompt = """
+completion_prompt_template = """
 Instruction:
 For each of the following examples, generate detailed character personas that fit the context. Each character should have a name and a detailed persona with their job and relevant personality traits. You can generate the personas for any individuals who would logically be part of the scene and contribute to it in some way.
+Each example should end with ###
 
 Example 1:
 On November 18, 1986, friends dropped Helle off at the couple's Newtown residence after she had worked a long flight from Frankfurt, West Germany. She was never seen again. That night, a snowstorm hit the area. The next morning, Richard said he was taking Helle and their children to his sister's house in Westport. When he arrived, Helle was not with him. Over the next few weeks, Richard gave Helle's friends a variety of stories as to why they were unable to reach her: that she was visiting her mother in Denmark, that she was visiting the Canary Islands with a friend, or that he simply did not know her whereabouts. Helle's friends were aware that Richard had a volatile temper and grew concerned. Helle had told some of them, "If something happens to me, don't assume it was an accident." On December 1, the private investigator Keith Mayo reported her missing to the Newtown Police. Richard Crafts was known to local law enforcement for his work as a volunteer police officer in Newtown, and in 1986 Crafts was working as a part-time police officer in the nearby town of Southbury. According to Mayo, Newtown Police initially dismissed his concerns, saying that Helle would probably return.
@@ -63,6 +64,7 @@ Character Personas:
     ]
   }
 ]
+###
 
 Example 2:
 On a recent afternoon in Chicago, two tow trucks arrived at the scene of a broken-down Toyota Corolla. The drivers, each claiming the tow, began ramming their vehicles into each other in a violent confrontation. The situation escalated when one driver shattered the windshield of the other truck. The incident disrupted traffic, with pedestrians recording the altercation. Law enforcement arrived to separate the drivers and restore order.
@@ -117,6 +119,7 @@ Character Personas:
     ]
   }
 ]
+###
 
 Example 3:
 {scene}
